@@ -11,10 +11,10 @@ module.exports = {
     '^.+\\.css$': '<rootDir>/config/jest/cssTransform.js',
   },
   transformIgnorePatterns: [
-    'node_modules/(?!@share-vde).*',
-    '^.+\\.module\\.(css|sass|scss)$',
+    '/node_modules/(?!@share-vde).+\\.js$',
+    '^.+\\.module\\.(css|sass|scss|less)$',
   ],
   moduleNameMapper: {
-    '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
+    '^.+\\.module\\.(css|sass|scss|less)$': 'identity-obj-proxy',
   },
 }
